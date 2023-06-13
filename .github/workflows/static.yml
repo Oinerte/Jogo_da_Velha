@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latested
+    runs-on: ubuntu-latest
    
     steps:
       - name: Render Deploy Action

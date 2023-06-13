@@ -1,0 +1,19 @@
+name: Deploy static content to Render
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latested
+   
+    steps:
+      - name: Render Deploy Action
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: srv-cht3o7jhp8u4v7sj4nk0?key=5BMjTn2uYds
+          api-key: rnd_irrq0b3C5mrJBXmOQnU0UpbmCwbj
+  
